@@ -1,2 +1,2 @@
-# cs257_2022_fall
-sample code for CS257 at Carleton College, fall term 2022
+# Carleton CS257, Fall 2022
+Sample code for the Fall 2022 offering of CS257 at Carleton College
