@@ -47,10 +47,10 @@ class PrimeChecker:
             in the proper range.
         '''
         if type(n) != type(0):
-            raise TypeError('Parameter (type %s) must have type %s' % (str(type(n)), str(type(0))))
+            raise TypeError(f'Parameter (type {type(n)}) must have type {type(0)}')
 
         if n < 1 or n > self.max_integer:
-            raise ValueError('Integer parameter (%d) is out of range (1 to %d)' % (n, self.max_integer))
+            raise ValueError(f'Integer parameter ({n}) is out of range (1 to {self.max_integer})')
 
         assert self.max_integer == len(self.sieve)
         if n < 2:
