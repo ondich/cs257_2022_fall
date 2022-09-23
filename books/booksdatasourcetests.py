@@ -22,9 +22,9 @@ class BooksDataSourceTester(unittest.TestCase):
         tiny_data_source = BooksDataSource('tinybooks.csv')
         books = tiny_data_source.books()
         self.assertTrue(len(books) == 3)
-        self.assertTrue(books[0].title == 'Emma')
-        self.assertTrue(books[1].title == 'Neverwhere')
-        self.assertTrue(books[2].title == 'Omoo')
+        self.assertTrue(books[0] == Book('Emma'))
+        self.assertTrue(books[1].title == Book('Neverwhere'))
+        self.assertTrue(books[2].title == Book('Omoo'))
 
 if __name__ == '__main__':
     unittest.main()
