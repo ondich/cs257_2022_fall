@@ -10,15 +10,20 @@
 import csv
 
 class Author:
-    def __init__(self, surname='', given_name='', birth_year=None, death_year=None):
+    def __init__(self, surname='', given_name='', birth_year=None, death_year=None, books=[]):
         self.surname = surname
         self.given_name = given_name
         self.birth_year = birth_year
         self.death_year = death_year
+        self.books = books
 
     def __eq__(self, other):
         ''' For simplicity, we're going to assume that no two authors have the same name. '''
         return self.surname == other.surname and self.given_name == other.given_name
+
+    # For sorting authors, you could add a "def __lt__(self, other)" method
+    # to go along with __eq__ to enable you to use the built-in "sorted" function
+    # to sort a list of Author objects.
 
 class Book:
     def __init__(self, title='', publication_year=None, authors=[]):
@@ -33,6 +38,10 @@ class Book:
             no two books have the same title, so "same title" is the same
             thing as "same book". '''
         return self.title == other.title
+
+    # For sorting books, you could add a "def __lt__(self, other)" method
+    # to go along with __eq__ to enable you to use the built-in "sorted" function
+    # to sort a list of Book objects.
 
 class BooksDataSource:
     def __init__(self, books_csv_file_name):
