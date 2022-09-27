@@ -4,6 +4,22 @@
 
     Reading from and writing to comma-separated value files
     using the csv module.
+
+    Reading from a CSV goes like this (see get_all_authors):
+
+        Open a file
+        Create a csv.reader from the open file
+        Iterate over the reader to get one row at a time.
+            Each row is a list containing the comma-separated
+            values from the next line of the file.
+
+    Writing to a CSV goes like this (see write_authors):
+
+        Open a file for writing
+        Create a csv.writer from the open file
+        For each row you want to write
+            create a list containing the values you want in this row
+            call writer.writerow(row)
 '''
 
 import sys
