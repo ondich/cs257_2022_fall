@@ -52,11 +52,23 @@ if __name__ == '__main__':
         print(f'Usage: {sys.argv[0]} books-input-file authors-output-file')
         exit()
 
-    # Get the authors out of the books CSV file
+    # Get the authors out of the books CSV file and print them to screen
     books_input_file = sys.argv[1]
     authors = get_all_authors(books_input_file)
+
+    print('===== HEY LOOK, SOME AUTHORS AS ORDERED PAIRS =====')
+    for author in authors:
+        print(author)
+    print()
+
+    print('===== NOW, SOME SORTED AUTHORS =====')
+    for surname, given_name in sorted(authors):
+        print(f'{given_name} {surname}')
+    print()
 
     # Write just the authors to a separate CSV file
     authors_output_file = sys.argv[2]
     write_authors(authors_output_file, authors)
+
+    print('===== DON\'T FORGET TO LOOK AT THE CONTENTS OF {authors_output_file} =====\n')
 
