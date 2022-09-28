@@ -21,6 +21,12 @@ class Author:
         ''' For simplicity, we're going to assume that no two authors have the same name. '''
         return self.surname == other.surname and self.given_name == other.given_name
 
+    def __lt__(self, other):
+        if self.surname < other.surname:
+            return True
+        if self.surname == other.surname and self.given_name < other.given_name:
+            return True
+        return False
     # For sorting authors, you could add a "def __lt__(self, other)" method
     # to go along with __eq__ to enable you to use the built-in "sorted" function
     # to sort a list of Author objects.
@@ -95,3 +101,14 @@ class BooksDataSource:
         '''
         return []
 
+if __name__ == '__main__':
+    # Experimental test code as needed. In this case, I'm checking to see
+    # whether my __lt__ and __eq__ methods in class Author are up to the job of
+    # sorting a list of Author objects. Turns out, yes. Run this code by just
+    # typing "python3 booksdatasource.py" at the command line.
+    authors = [Author("Ondich", "Jeff"),
+               Author("Rafferty", "Anna"),
+               Author("Oesper", "Layla"),
+               Author("Ondich", "Elena")]
+    for author in sorted(authors):
+        print(author.given_name, author.surname)
