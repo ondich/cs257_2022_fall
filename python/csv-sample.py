@@ -2,6 +2,15 @@
     csv-sample.py
     Jeff Ondich, 27 September 2022
 
+    Try this program like so:
+
+        python3 csv-sample.py books.csv authors.csv
+
+    This should read all the books out of books.csv, print the authors
+    to the screen, and save the authors as a separate authors.csv
+    two-column CSV file.
+
+
     Reading from and writing to comma-separated value files
     using the csv module.
 
@@ -56,12 +65,7 @@ if __name__ == '__main__':
     books_input_file = sys.argv[1]
     authors = get_all_authors(books_input_file)
 
-    print('===== HEY LOOK, SOME AUTHORS AS ORDERED PAIRS =====')
-    for author in authors:
-        print(author)
-    print()
-
-    print('===== NOW, SOME SORTED AUTHORS =====')
+    # Print the authors to the screen in sorted order
     for surname, given_name in sorted(authors):
         print(f'{given_name} {surname}')
     print()
