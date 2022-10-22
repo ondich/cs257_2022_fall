@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeff's JS sample 4</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sample4.css">
+        <script type="text/javascript" src="sample4.js"></script>
+
+        <script type="text/javascript">
+        var someNumber = 81;
+        alert('When does this code get executed? Here\'s a number: ' + someNumber);
+        var div = document.getElementById('somediv');
+        if (div === null) {
+            alert('somediv is not available yet');
+        } else {
+            alert('somediv says: ' + div.innerHTML);
+        }
+        </script>
+    </head>
+
+    <body>
+        <h2>Javascript Sample 4: executing Javascript when the page is loaded</h2>
+        <p>You can execute Javascript code whenever the page loads into the browser.
+        View source, and take a look at the stuff in the &lt;head&gt; section as well
+        as the &lt;body&gt; tag.</p>
+        <div id="somediv">When is this div available for use by Javascript?</div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+/*
+   For use with sample6.html
+   Jeff Ondich, 1 November 2021
+*/
+
+body {
+    margin: 20px;
+}
+
+.animalcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 500px;
+    width: 100%;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+
+.animal {
+    font-size: 24pt;
+    color: white;
+}
+
+#aardvark {
+    width: 60%;
+    height: 50%;
+    background-color: green;
+}
+
+#barracuda {
+    width: 40%;
+    height: 50%;
+    background-color: #0000aa;
+}
+
+#coatimundi {
+    width: 30%;
+    height: 50%;
+    background-color: #aa0000;
+}
+
+#duck {
+    width: 70%;
+    height: 50%;
+    background-color: #cccc00;
+}
+

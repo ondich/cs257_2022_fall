@@ -1,0 +1,50 @@
+/*
+   For use with sample5.html
+   Jeff Ondich, 3 May 2016
+*/
+
+body {
+    margin: 20px;
+}
+
+#animals {
+    height: 500px;
+    width: 100%;
+}
+
+#aardvark {
+    width: 60%;
+    height: 40%;
+    float:left;
+    font-size: 24pt;
+    color: white;
+    background-color: green;
+}
+
+#barracuda {
+    width: 40%;
+    height: 40%;
+    float:left;
+    font-size: 24pt;
+    color: white;
+    background-color: #0000aa;
+}
+
+#coatimundi {
+    width: 30%;
+    height: 40%;
+    float:left;
+    font-size: 24pt;
+    color: white;
+    background-color: #aa0000;
+}
+
+#duck {
+    width: 70%;
+    height: 50%;
+    float:left;
+    font-size: 24pt;
+    color: white;
+    background-color: #cccc00;
+}
+

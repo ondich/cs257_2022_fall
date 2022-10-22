@@ -1,0 +1,63 @@
+/*
+    sample4.css
+    2 May 2018
+
+    This sample tries to illustrate
+    - Separation of content from presentation
+    - More complicated CSS selector syntax
+        than we've seen before (e.g. contrast
+        ul versus ul.vertical-navbar)
+*/
+
+/* Vertical navigation */
+ul.vertical-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+ul.vertical-navbar li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.vertical-navbar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Horizontal navigation */
+ul.horizontal-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+ul.horizontal-navbar li {
+    float: left;
+}
+
+ul.horizontal-navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.horizontal-navbar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.important {
+    color: red;
+    font-size: 120%;
+}
+

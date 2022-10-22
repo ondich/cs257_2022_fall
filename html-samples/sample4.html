@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content versus style</title>
+    <link rel="stylesheet" href="sample4.css" type="text/css" />
+</head>
+
+<body>
+    <h3>Content in HTML, presentation in CSS</h3>
+    <p>Here's an unordered (&lt;ul&gt;) list of links:</p>
+
+    <ul>
+        <li><a href="https://duckduckgo.com/">DuckDuckGo</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.bing.com/">Bing</a></li>
+        <li><a href="https://www.carleton.edu/">Carleton</a></li>
+    </ul>
+
+    <p>Try this: add a class="vertical-navbar" attribute to
+        this &lt;ul&gt;, then reload.</p>
+
+    <p>Try this: change to class="horizontal-navbar" for
+        this &lt;ul&gt;, then reload.</p>
+
+    <p>By the way: in a normal situation, you would just give the &lt;ul&gt;
+        a class like class="navbar", and then write the .navbar
+        styling in the CSS file, and you wouldn't have to edit
+        the HTML at all to modify the navbar appearance.</p>
+
+    <p>I got the idea for this sample from 
+        <a href="https://www.w3schools.com/css/css_navbar.asp">this tutorial on navigation bar styling</a>
+    </p>
+
+    <h3>What's the point?</h3>
+    <p class="important">IMPORTANT: In general, we should store content/meaning in
+        the HTML file, and presentation/appearance in the CSS file.</p>
+
+</body>
+</html>

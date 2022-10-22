@@ -1,0 +1,20 @@
+/*
+   For use with css-sample.html
+   Jeff Ondich, 5 May 2016
+*/
+
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+#colorbox {
+    width: 100%;
+    height: 20%;
+    float:left;
+    font-family: "Lucida Sans Unicode", Helvetica, "Arial Unicode MS", Arial serif;
+    font-size: 4em;
+    color: white;
+    background-color: #bb2222;
+}
+

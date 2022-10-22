@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 1</title>
+</head>
+
+<body>
+    <h1>CS257 Quick HTML Intro (this is an "h1" heading)</h1>
+    <p>Your job here is to learn the meanings of all the HTML tags on this page,
+    and to do some experimentation with them.</p>
+
+    <ol>
+        <li>I'm assuming you have gotten to this file by cloning my
+            <a href="https://github.com/ondich/cs257_2020_fall.git">GitHub repository</a>
+            and opening html-samples/sample1.html. If not, you can just do "File &rarr; Save As" or the
+            equivalent in your browser, and then you'll have a copy of sample1.html on your local machine.</li>
+        <li>Open sample1.html in both your browser (Ctrl-O or Command-O, typically) and in a text editor.</li>
+        <li>For questions that appear below, make sure you figure out the answers.</li>
+        <li>Try editing stuff in your text editor, saving, and reloading in your browser to see 
+        the effects of your changes.</li>
+        <li>Make a list of all the tags in this document, and ensure that you understand
+        them all. Questions? Keep a list and ask them in class or on Slack.</li>
+        <li>Searching online for "html tag p" or similarly for tags other than p will quickly get you to
+        documentation and tutorials.</li>
+    </ol>
+    
+    <h2>Heading h2</h2>
+    <p>This paragraph asks: where does the &lt;title&gt; tag's text appear in your browser?</p>
+    <p>This paragraph asks: what do the default inter-paragraph spacing and first line indentation
+    look like in your browser?</p>
+    <p>And this one asks: how do newlines and indentations in
+             the
+     source
+ code
+          appear in the displayed version of the page?</p>
+
+    <h3>Heading h3</h3>
+    <p>Does this document have syntactically valid structure? Test it by visiting the
+    <a href="https://validator.w3.org/">W3C HTML validator</a></p>
+
+    <h4>Heading h4</h4>
+    <p>Are you using Firefox, Chrome, or Safari? Right-click on this page and select "Inspect" or "Inspect Element"
+    to get a nice collection of developer tools. Feel free to play around with this to see
+    what it shows you. We'll use these tools for debugging Javascript soon.</p>
+
+    <p>MS Edge doesn't have these tools built-in, but you can get their
+    <a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide">developer tools as a standalone app</a>.</p>
+    
+
+    <h5>Heading h5</h5>
+    <p><a href="http://www.w3schools.com/html/html_entities.asp">HTML entities</a>
+    allow you to display HTML special characters like &lt;, &gt;, and &amp;.</p>
+
+    <p>They also allow you to represent any Unicode character with ASCII text, like
+    <a href="http://www.fileformat.info/info/unicode/char/1f600/index.htm">this one</a>: &#x1F600;.
+    On the other hand, if your text editor is capable of saving arbitrary Unicode text and
+    your HTML page has a suitable charset like UTF-8 (see the &lt;meta&gt; tag in the &lt;head&gt; section above),
+    you can just paste the Unicode character into your source code directly,
+    like this: 😀.</p>
+
+    <h6>Heading h6</h6>
+    <p>That's a tiny heading</p>
+
+    <h2>Do you like lists? I like lists</h2>
+    <ul>
+        <li>Here's</li>
+        <li>an</li>
+        <li>unordered</li>
+        <li>list</li>
+    </ul>
+
+    <ol>
+        <li>Here's</li>
+        <li>an</li>
+        <li>ordered</li>
+        <li>list, defaulting to numbers</li>
+    </ol>
+
+    <ol type="a">
+        <li>Here's</li>
+        <li>an</li>
+        <li>ordered</li>
+        <li>list with lowercase letters</li>
+    </ol>
+
+    <ol type="I">
+        <li>Here's</li>
+        <li>an</li>
+        <li>ordered</li>
+        <li>list with uppercase Roman numerals</li>
+    </ol>
+
+    <h2>I also like tables</h2>
+    <table>
+        <tr><th></th><th>Antlers?</th><th>Wings?</th><th>Noisy?</th></tr>
+        <tr><td>Crow</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Moose</td><td>Yes</td><td>No</td><td>No</td></tr>
+        <tr><td>Moth</td><td>No</td><td>Yes</td><td>No</td></tr>
+    </table>
+    <p>To make tables fancier, you'll use CSS.</p>
+
+    <h2>Here's a picture</h2>
+    <img src="https://s-media-cache-ak0.pinimg.com/236x/30/7a/d2/307ad2b6fb7a15a34a28ae998c7e2431.jpg">
+
+    <h2>Some more information</h2>
+    <p>The <a href="https://www.w3.org/">World Wide Web Consortium</a> (also known as W3C) is the standards
+    organization that maintains the formal definition of HTML. The most up-to-date version of HTML is
+    HTML5. The current version of CSS (also a standard of the W3C) is CSS3.</p>
+
+    <p>When you search for references for HTML and CSS details, the top results will often point you to
+    <a href="http://www.w3schools.com/">w3schools.com</a>. This organization has tons of documentation, and I
+    find it quite useful. That said, there are many web developers who
+    <a href="http://gal.steinitz.com/blog/2013/07/21/why-w3schools-is-bad-for-the-internet/">don't</a>
+    <a href="http://www.w3fools.com/">like</a>
+    w3schools
+    <a href="https://news.ycombinator.com/item?id=6422998">very much</a>. They often argue that
+    the best source for reference and tutorial info for web development
+    is <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">the Mozilla Developer Network</a>.
+    For our purposes, I think either one will work fine for you, but I wanted to let you know that
+    w3schools is not related to W3C, and that it's controversial to some degree.</p>
+
+</body>
+</html>

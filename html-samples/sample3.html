@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sample3.css" type="text/css" />
+    <title>Example 2: CSS</title>
+</head>
+
+<body>
+    <h1>Cascading style sheets</h1>
+    <p>Your job this time is to learn some CSS basics for adjusting colors, sizes,
+    fonts, and backgrounds.</p>
+
+    <h2>Styling paragraphs</h2>
+    <p>Here's some text in a normal paragraph tag.</p>
+
+    <p class="important">Here's some text in a paragraph with class "important". Look at the HTML
+    and the CSS to see how we make it look important.</p>
+
+    <p class="resize_me">This paragraph has class "resize_me". Try editing the CSS for this
+    class using the various size units provided by CSS. (Search "css size units" for
+    some help. Units include px, pt, in, cm, mm, em, rem, ex, %, and more.)</p>
+
+    <p class="indented">This is an indented paragraph. I'm just going to keep typing
+    so it will be long enough to wrap onto a second line. I wonder if this is long
+    enough yet. There's a woodpecker trying to bring down a tree on my patio, one head-bang
+    at a time. (Is this long enough now?)</p>
+
+    <p class="indented important">This paragraph is both indented and important. I'm just going to keep typing
+    so it will be long enough to wrap onto a second line. I wonder if this is long
+    enough yet. There's a woodpecker trying to bring down a tree on my patio, one head-bang
+    at a time. (Is this long enough now?)</p>
+
+    <p class="important">Can you have two HTML elements with the same class?</p>
+
+    <h2>Colors</h2>
+    <p class="special_color">Try changing the background and text color for this paragraph to various values.
+    Note that there are some built-in color names (like "red", "green", "purple", etc.), but you can also
+    specify colors using 2 hexadecimal digits for the red, green, and blue components of the color you want.
+    Since 2-digit hexadecimal numbers range from 00 to FF (0 to 255 in base ten), you can get a very bright
+    purple with #xFF00FF (that is, the maximum red and the maximum blue, with no green at all), or a more
+    muted and darker purple with #x990099). Search for "css color chart" or something like that to see some
+    handy images.</p>
+    
+    <h2>Styling headings</h2>
+    <p>Can you change the styles of an h2 tag the same way we changed it for paragraphs?
+    Experiment with that. For example, try making this section's h2 tag red and 50% bigger
+    than a default h2 tag.</p>
+
+    <h2>Styling tables</h2>
+    
+    <p>Here's a table</p>
+    <table>
+    <tr><th></th><th>Antlers?</th><th>Wings?</th><th>Noisy?</th></tr>
+    <tr><td>Crow</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Moose</td><td>Yes</td><td>No</td><td>No</td></tr>
+    <tr><td>Moth</td><td>No</td><td>Yes</td><td>No</td></tr>
+    </table>
+
+    <p>Here's another table</p>
+    <table>
+    <tr><th></th><th>Antlers?</th><th>Wings?</th><th>Noisy?</th></tr>
+    <tr><td>Seagull</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Elk</td><td>Yes</td><td>No</td><td>Sometimes</td></tr>
+    <tr><td>Moth</td><td>No</td><td>Yes</td><td>No, but kinda creepy</td></tr>
+    </table>
+
+    <p>Those cell borders make all the interior lines look doubled-up. Can you
+    search to figure out how to fix that so there are just single lines between
+    cells? Try applying that change just to the second table.</p>
+
+    <h2>class versus id</h2>
+    <p class="important" id="class_vs_id">Any HTML element can have a <em>class</em> attribute, an <em>id</em>
+    attribute, both, or neither. The difference is that many elements can share a class, while only
+    one element in a page is allowed to have any given id. Take a look at the CSS to see how
+    this paragraph is styled, and how the styles for the "important" class are combined with the styles for
+    the "class_vs_id" id.</p>
+
+    <h2>Inline styles</h2>
+    <p>You can apply a style to <span class="important">just some inline text</span> using the <em>span</em> tag.</p>
+
+    <h2>Page margins</h2>
+    <p>See how this page jams right up to the bottom of the browser with no margin (at least it does
+    for me)? How could you add a little space at the bottom of the page to prevent this?</p>
+</body>
+</html>

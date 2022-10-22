@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='template_sample.css') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    <h2>Hi, {{ user_name }}</h2>
+
+    <p>Try modifying the URL to get a greeting for somebody else's name.</p>
+
+    <p>An important attribute of the flask.render_template function is that it protects you against
+       dangerous user input. For example, try the endpoint /hello/&lt;em&gt;Bob, which looks like it's
+       intended by the user to turn everything from "Bob" to the end of the page italic. Check out
+       what render_template produces instead. This is one way Flask provides you with tools
+       to prevent <a href="https://owasp.org/www-community/Injection_Flaws">injection attacks</a>.
+       </p>
+</body>
+</html>

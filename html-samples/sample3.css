@@ -1,0 +1,47 @@
+/*
+   For use with sample3.html
+   Jeff Ondich, 3 May 2016
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+}
+
+p {
+    font-family: Helvetica, Arial serif;
+    font-size: 12pt;
+}
+
+.important {
+    font-size: 120%;
+    color: red;
+    background-color: yellow;
+}
+
+.resize_me {
+    font-size: 8pt;
+}
+
+.indented {
+    text-indent: 20px;
+}
+
+.special_color {
+    color: yellow;
+    background-color: #AA00AA;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+#class_vs_id {
+    background-color: #EEEEEE;
+}
+

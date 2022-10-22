@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='template_sample.css') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    <h2>Template Sample Home Page</h2>
+    <p>This mini-site illustrates a few uses of Flask/Jinja2 templates.</p>
+
+    <p>This page itself uses templates only to include its CSS file. Look at the
+    &lt;link&gt; tag in the header of templates/index.html to see how that is done.</p>
+
+    <p>Visit some other pages.</p>
+    <ul>
+        <li><a href="/shared-header/">implementing a shared page header</a></li>
+        <li><a href="/hello/Elmo">passing a variable into a page</a></li>
+    </ul>
+</body>
+</html>

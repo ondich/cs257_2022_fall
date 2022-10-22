@@ -1,0 +1,16 @@
+/*
+    debugging.css
+    Jeff Ondich, 9 November 2021
+    For use with Javascript debugging samples.
+*/
+
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+div {
+    border: 1px solid black;
+    padding: 15px;
+    line-height: 250%;
+}

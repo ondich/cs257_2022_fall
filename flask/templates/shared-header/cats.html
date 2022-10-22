@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='template_sample.css') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    {% include 'shared-header/header.html' %}
+
+    <h2>Cats</h2>
+
+    <h3>Aleph, Emergency Backup Cat and Emma, Queen of Cats</h3>
+    <img src="{{ url_for('static', filename='images/aleph-emma.jpeg') }}"></div>
+
+    <h3>Emma, Queen of Cats and Digby the Perfect Cat</h3>
+    <img src="{{ url_for('static', filename='images/emma-digby.jpeg') }}">
+
+    <h3>Digby the Perfect Cat, hard at work</h3>
+    <img src="{{ url_for('static', filename='images/digby1.jpeg') }}">
+    <img src="{{ url_for('static', filename='images/digby2.jpeg') }}">
+    <img src="{{ url_for('static', filename='images/digby3.jpeg') }}">
+    <img src="{{ url_for('static', filename='images/digby4.jpeg') }}">
+
+</body>
+</html>

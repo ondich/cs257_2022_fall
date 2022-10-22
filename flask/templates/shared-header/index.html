@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='template_sample.css') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    {% include 'shared-header/header.html' %}
+
+    <h2>Shared-Header Home Page</h2>
+    <p>This mini-site illustrates the use of Flask/Jinja2 "include" statements to share HTML code and
+        templates across multiple pages. Here, we're just including a simple banner
+        on every page without having to repeat its code every time.</p>
+
+    <p>Visit some other pages with this shared header.</p>
+    <ul>
+        <li><a href="cats.html">Cats</a></li>
+        <li><a href="ruby.html">Ruby</a></li>
+        <li><a href="otis.html">Otis</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*
+    template_sample.css
+    Jeff Ondich
+    6 November 2020
+
+    CSS for the template_sample.py application.
+*/
+
+body {
+    margin: 20px;
+    font-family: Helvetica;
+    background: #eeeeee;
+}
+
+img {
+    width: 300px;
+    margin: 30px;
+}
+
+.banner {
+    background: #118822;
+    color: white;
+    padding: 20px;
+    font-size: 300%;
+}

@@ -1,0 +1,28 @@
+/*
+   sample2.css
+   2 May 2018
+   The very beginnings of CSS
+*/
+
+p {
+    color: blue;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+ol {
+    /* See https://www.w3schools.com/css/css_list.asp */
+    list-style-type: lower-alpha;
+}
+
+.alarming {
+    /* equivalent to color: red */
+    color: #FF0000;
+}
+
+.big {
+    font-size: 36pt;
+}
+

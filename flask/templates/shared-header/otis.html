@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='template_sample.css') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    {% include 'shared-header/header.html' %}
+
+    <h2>Otis</h2>
+
+    <img src="{{ url_for('static', filename='images/otis.jpeg') }}"></div>
+</body>
+</html>

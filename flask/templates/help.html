@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie API reference</title>
+</head>
+<body>
+    <pre>Movie API: endpoint reference
+All responses are in JSON
+
+REQUEST: /
+RESPONSE:
+    A greeting from this API to you.
+
+REQUEST: /help
+RESPONSE:
+    This message
+
+REQUEST: /actor/{last_name_prefix}
+RESPONSE:
+    A list of actors whose last names begin (case-insensitively) with the specified prefix.
+    Each actor is represented as a dictionary with keys "last_name" and "first_name".
+    (Yes, this is a super-rich dataset, why do you ask?)
+
+REQUEST: /movies[?genre={GENRE}&amp;start_year={STARTYEAR}&amp;end_year={ENDYEAR}]
+    A list of movies matching the specified GET parameters. If genre={GENRE}
+
+      start_year, int: reject any movie released earlier than this year
+      end_year, int: reject any movie released later than this year
+      genre: reject any movie whose genre does not match this genre exactly
+
+    For example:
+
+        /movies?start_year=1980&amp;genre=thriller
+
+    will return a list of all thriller movies released in 1980 or later.
+
+        /movies
+
+    will return a list of all the movies in the dataset.
+    </pre>
+</body>
+</html>
+
