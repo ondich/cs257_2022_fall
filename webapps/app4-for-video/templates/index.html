@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='books.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='books.js') }}" ></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    <h1>CS 257: Sample Web App</h1>
+
+    <p><button id="authors_button">Get authors</button></p>
+
+    <p><table id="results_table"></table></p>
+
+    <p>This is a <span class="whoa">TERRIBLE</span>
+        user interface. Do not copy it for your project!</p>
+
+    <p><strong>Why is this page this way?</strong> Because I want to give you an example
+    that illustrates the core techniques you'll need for your web application project,
+    but does so in as minimal a way as possible. So you'll find a little HTML, a little CSS, a little
+    Javascript, and access to a database-drive API, but nothing more. You can't even search for
+    a book or author by name, which would be fundamental features if I actually wanted to
+    make this application useful.</p>
+
+  </body>
+</html>

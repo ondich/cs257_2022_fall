@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='webapp.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <title>CS 257: Software Design</title>
+</head>
+
+<body>
+    <h1>The Just-HTML Web App Home Page</h1>
+    <p>Hi there, {{ user_name }}</p>
+
+    <p>This is the home page, obtained via the "/" route
+        from the Flask server.</p>
+
+    <p>Go to
+    <a href="/about">the About page</a>
+    if you wish.</p>
+
+    <p>Here's a picture of Maisie and her penguin to make it all worthwhile.</p>
+    <img src="{{ url_for('static', filename='images/maisie.jpg') }}"
+         alt="Jeff's dog Maisie with her penguin toy">
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+/*
+    books.css
+    Jeff Ondich, 27 April 2016
+    Updated 6 November 2021
+
+    Styles for the "books and authors" webapp sample
+    for CS 257
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+a {
+  color: #0B86B5;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #D8D8D8;
+  text-decoration: none;
+  cursor: pointer;
+}
+

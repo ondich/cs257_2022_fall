@@ -1,0 +1,34 @@
+/*
+    books.css
+    Jeff Ondich, 27 April 2016
+    Updated 6 May 2018
+
+    Styles for the "books and authors" webapp sample
+    for CS 257, Spring 2016. 
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+a {
+  color: #0B86B5;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #D8D8D8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.whoa {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: red;
+    font-size: 250%;
+}
