@@ -6,7 +6,7 @@ This folder contains a collection of sample Flask apps.
 
 app1-just-html - This one shows a Flask app with two HTML pages and not much else. No Javascript, no API, no database.
 
-app2-with-api - This is a Flask app with a front-end in app.py (i.e. routes that yield HTML pages) and a back-end in api.py (i.e. routes that yield JSON). Two connect the front-end to the back-end, we have Javascript that demonstrates how to issue API calls and use the results to modify what the user sees.
+app2-with-api - This is a Flask app with a front-end in app.py (i.e. routes that yield HTML pages) and a back-end in api.py (i.e. routes that yield JSON). To connect the front-end to the back-end, we have Javascript that demonstrates how to issue API calls and use the results to modify what the user sees.
 
 app3-api-and-db - This sample extends the ideas in app2-with-api to access books & authors data stored in a postgres database.
 
