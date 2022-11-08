@@ -60,7 +60,12 @@ function loadAuthorsSelector() {
 }
 
 function onAuthorsSelectionChanged() {
-    let authorID = this.value; 
+    let element = document.getElementById('author_selector');
+    if (!element) {
+        return;
+    }
+    let authorID = element.value; 
+
     let url = getAPIBaseURL() + '/books/author/' + authorID;
 
     fetch(url, {method: 'get'})
