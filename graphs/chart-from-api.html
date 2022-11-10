@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COVID-19 Stats</title>
+    <link rel="stylesheet" href="css/chartist.min.css">
+    <link rel="stylesheet" href="css/chart-from-api.css">
+</head>
+<body>
+    <div class="header">
+        <select id="state-select"></select>
+    </div>
+    
+    <!-- Positive tests -->
+    <div class="chart-container">
+        <div class="chart-title" id="state-new-cases-title"></div>
+        <div class="ct-chart ct-perfect-fourth" id="state-new-cases-chart"></div>
+        <div id="state-new-cases-tooltip" class="tooltip"> </div>
+    </div>
+
+    <!-- These script tags go down here so they won't get executed until the
+         HTML is almost entirely parsed. Putting your script tags down here
+         has become increasingly standard for that reason. It simplifies the
+         "when does this happen" issue. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/chartist.min.js"></script>
+    <script src="js/chart-from-api.js"></script>
+</body>
+</html>
+

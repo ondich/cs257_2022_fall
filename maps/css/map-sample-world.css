@@ -1,0 +1,48 @@
+/*
+ * map-sample-us.css
+ * Jeff Ondich
+ * 11 November 2020
+ *
+ * Simple sample using the Datamaps library to show how to incorporate
+ * a US map in your project.
+ *
+ * Datamaps is Copyright (c) 2012 Mark DiMarco
+ * https://github.com/markmarkoh/datamaps
+ */
+#map-container {
+    position: relative;
+    float: left;
+
+    /* Preserving the container div's aspect ratio (which should be 4:3 for
+     * the Datamap US map) uses this slightly bizarre CSS trick, where you make
+     * sure the height is 0 and the ratio between width and padding-bottom
+     * is your desired aspect ratio. See this pretty good article for details:
+     * https://css-tricks.com/aspect-ratio-boxes/
+     */
+    height: 0;
+    width: 80%;
+    padding-bottom: 60%;
+
+    /* My friend Shaun (Carleton CS '02) is even worse than I am at the details of
+     * graphic design. So when he wants to make sure the designers don't preserve
+     * his color choices, he makes stuff orange to force their hand. I am using
+     * orange here both to remind you to change the color, and to make visible the
+     * size and aspect ratio of the US map object. */
+    background: orange;
+}
+
+#goals {
+    float: left;
+    width: 40%;
+}
+
+#country-summary {
+    float: right;
+    width: 40%;
+}
+
+.hoverpopup {
+    background: #eeeeee;
+    border: 1px black solid;
+    padding: 3px;
+}

@@ -1,0 +1,68 @@
+/*
+ * simple-charts.css
+ * Jeff Ondich, 12 November 2020
+ *
+ * For my simple-charts sample, using Chartist.
+ * https://gionkunz.github.io/chartist-js/
+ */
+
+.sample-chart-container {
+    display: inline-block;
+    border: 2px dashed gray;
+    width: 40%;
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+.ct-series-a .ct-line {
+    stroke: orange;
+}
+
+.ct-series-a .ct-point {
+    stroke: gray;
+}
+
+.ct-series-b .ct-line {
+    stroke: blue;
+}
+
+.ct-series-b .ct-point {
+    stroke: black;
+}
+
+.ct-series-a .ct-bar {
+    stroke: #bb1111;
+    stroke-width: 20px;
+}
+
+.ct-series-b .ct-bar {
+    stroke: #1111bb;
+    stroke-width: 20px;
+}
+
+/* You can customize the color of the pie slices in a pie chart.
+    See https://www.w3schools.com/cssref/css_colors.asp for
+    CSS color names if you're interested. Otherwise, a color
+    chart with #aa2345-style RGB hexadecimal colors can help.
+
+    This color palette I've chosen? It's UGLY. Pick better,
+    or just delete this whole section and let the defaults
+    do their neon-loud thing.
+ */
+.ct-series-a .ct-slice-pie { fill: red; }
+.ct-series-b .ct-slice-pie { fill: mediumaquamarine; }
+.ct-series-c .ct-slice-pie { fill: yellow; }
+.ct-series-d .ct-slice-pie { fill: firebrick; }
+.ct-series-e .ct-slice-pie { fill: blue; }
+.ct-series-f .ct-slice-pie { fill: purple; }
+.ct-series-g .ct-slice-pie { fill: lightblue; }
+.ct-series-h .ct-slice-pie { fill: gray; }
+.ct-series-i .ct-slice-pie { fill: green; }
+.ct-series-j .ct-slice-pie { fill: mediumseagreen; }
+
+.chart-title {
+    text-align: center;
+    width: 100%;
+    font-size: 36pt;
+}
+

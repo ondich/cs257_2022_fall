@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map Sample</title>
+        <!-- These are required for the DataMaps library to work -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+
+        <!-- You need this one for the US map -->
+        <script src="js/datamaps.world.min.js"></script>
+
+        <!-- Here's stuff I wrote for my sample -->
+        <link rel="stylesheet" type="text/css" href="css/map-sample-world.css"/>
+        <script src="js/map-sample-world.js"></script>
+    </head>
+
+    <body>
+        <div id="goals">
+            <h3>Goals</h3>
+            <ul>
+                <li>Color the countries as you wish</li>
+                <li>Give you country-specific information when you hover over a country</li>
+                <li>Perform some country-specific action when you click on a country</li>
+            </ul>
+        </div>
+
+        <div id="country-summary"></div>
+
+        <div id="map-container"></div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+/*
+ * chart-from-api.css
+ * Jeff Ondich, 12 November 2020
+ *
+ * Styles for a sample showing how to take data from an API
+ * and build a bar chart with tooltips.
+ *
+ * Uses the Chartist library: https://gionkunz.github.io/chartist-js/
+ * Copyright © 2019 Gion Kunz
+ * Free to use under either the WTFPL license or the MIT license.
+ *
+ * Data from the COVID Tracking Project: https://covidtracking.com/data/api
+ * The COVID Tracking Project at The Atlantic’s data and website content is
+ * published under a Creative Commons CC BY 4.0 license, which requires users
+ * to attribute the source and license type (CC BY 4.0) when sharing our data
+ * or website content.
+ */
+
+select {
+    font-size: 16pt;
+}
+
+.header {
+    padding: 20px;
+}
+
+.chart-container {
+    display: inline-block;
+    border: 2px dashed gray;
+    width: 50%;
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+.chart-container .ct-bar {
+    stroke: #11aa11;
+    fill: #11aa11;
+    stroke-width: 5px;
+}
+
+.chart-title {
+    text-align: center;
+    width: 100%;
+    font-size: 36pt;
+}
+
+.state-select {
+    font-size: 28pt;
+}
+
+.tooltip {
+    display: none;
+    background-color: #eee;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+/* Fix x-axis labels. https://stackoverflow.com/questions/40762182/chartist-js-rotate-labels-on-x-axis/42666530 */
+svg.ct-chart-bar, svg.ct-chart-line{
+    overflow: visible;
+}
+
+.ct-label.ct-label.ct-horizontal.ct-end {
+    position: relative;
+    justify-content: flex-end;
+    text-align: right;
+    transform-origin: 100% 0;
+    transform: translate(-100%) rotate(-75deg);
+    white-space:nowrap;
+}
+
