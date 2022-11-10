@@ -12,3 +12,5 @@ app3-api-and-db - This sample extends the ideas in app2-with-api to access books
 
 app4-for-video - This is a sample that I used for a few terms of CS257 to demonstrate how to combine Flask, Javascript, and PostgreSQL in one package. And in particular, I made a video based on this app to illustrate various techniques. In the meantime, I developed the simpler (and, I hope, more helpful) sample app3-api-and-db for the same purpose. But since I haven't remade the video, app4-for-video is here so you can consult it while watching the video.
 
+app5-with-api - A slight variant of app2-with-api that shows a little bit of passing data from a user input element (a text box) to the API as GET parameters. Try clicking Cats with nothing in the text box. Then try putting just "a" in the text box to see if you get the cats who have "a" in their names.
+
