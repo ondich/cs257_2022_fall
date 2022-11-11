@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sql-injection.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='sql-injection.js') }}" ></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <title>SQL Injection</title>
+</head>
+
+<body>
+    <h2>SQL Injection Example, Round 2 (Nice Try)</h2>
+
+    <p>Here, we try to constrain the user's behavior by using a
+        &lt;select&gt; element instead of a &lt;input type="text"&gt;
+        element. Will this fix our security problem?</p>
+
+    <p>Ha. No. <span style="color:red">Attackers won't use your user interface</span>.</p>
+
+    <div class="search_form">
+        <p>Find authors whose last names contain the selected capital letter.</p>
+        <select id="search_text">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <button id="search_button">Search authors</button>
+        <p><table id="results_table"></table></p>
+    </div>
+
+</body>
+</html>

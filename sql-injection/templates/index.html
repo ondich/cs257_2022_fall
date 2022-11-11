@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sql-injection.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='sql-injection.js') }}" ></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <title>SQL Injection</title>
+</head>
+
+<body>
+    <h2>SQL Injection Example</h2>
+
+    <p>This page and the accompanying Flask app and API illustrate the danger of SQL injection.
+        Study this project, but don't copy it.</p>
+
+    <div class="search_form">
+        <p>Find authors whose last names contain the specified search string.</p>
+        <input id="search_text" type="text">
+        <button id="search_button">Search authors</button>
+        <p><table id="results_table"></table></p>
+    </div>
+
+</body>
+</html>
