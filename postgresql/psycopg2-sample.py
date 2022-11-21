@@ -59,8 +59,9 @@ def get_connection():
         exit()
 
 def get_authors():
-    ''' Returns a list of the full names of all the authors
-        in the database, ordered by surname. '''
+    ''' Returns a list of all the authors in the database, ordered by surname.
+        Each author is represented by a dictionary with keys "given_name"
+        and "surname". '''
     authors = []
     try:
         # Create a "cursor", which is an object with which you can iterate
@@ -74,9 +75,7 @@ def get_authors():
 
         # Iterate over the query results to produce the list of author names.
         for row in cursor:
-            given_name = row[0]
-            surname = row[1]
-            authors.append(f'{given_name} {surname}')
+            authors.append({'given_name':row[0], 'surname':row[1]})
 
     except Exception as e:
         print(e, file=sys.stderr)
@@ -85,8 +84,9 @@ def get_authors():
     return authors
 
 def get_authors_by_surname(search_text):
-    ''' Returns a list of the full names of all authors in the database
-        whose surnames are equal to the specified search string.
+    ''' Returns a list of all authors in the database whose surnames are equal
+        to the specified search string. Each author is represented by a dictionary
+        with keys "given_name" and "surname".
 
         This function introduces an important security issue. Suppose you
         have information provided by your user (e.g. a search string)
@@ -106,9 +106,7 @@ def get_authors_by_surname(search_text):
         cursor = connection.cursor()
         cursor.execute(query, (search_text,))
         for row in cursor:
-            given_name = row[0]
-            surname = row[1]
-            authors.append(f'{given_name} {surname}')
+            authors.append({'given_name':row[0], 'surname':row[1]})
 
     except Exception as e:
         print(e, file=sys.stderr)
@@ -117,8 +115,9 @@ def get_authors_by_surname(search_text):
     return authors
 
 def get_matching_authors(search_text):
-    ''' Returns a list of the full names of all authors in the database
-        whose surnames contain (case-insensitively) the specified search string. '''
+    ''' Returns a list of all authors in the database whose surnames contain
+        (case-insensitively) the specified search string. Each author is
+        represented by a dictionary with keys "given_name" and "surname". '''
     authors = []
     try:
         query = '''SELECT given_name, surname
@@ -128,9 +127,7 @@ def get_matching_authors(search_text):
         cursor = connection.cursor()
         cursor.execute(query, (search_text,))
         for row in cursor:
-            given_name = row[0]
-            surname = row[1]
-            authors.append(f'{given_name} {surname}')
+            authors.append({'given_name':row[0], 'surname':row[1]})
 
     except Exception as e:
         print(e, file=sys.stderr)
@@ -144,7 +141,7 @@ def main():
     print('========== All authors ==========')
     authors = get_authors()
     for author in authors:
-        print(author)
+        print(f"{author['given_name']} {author['surname']}")
     print()
 
     # Example #2: get a list of authors whose surnames equal a search string
@@ -152,7 +149,7 @@ def main():
     print(f'========== All authors with surname "{surname}" ==========')
     authors = get_authors_by_surname(surname)
     for author in authors:
-        print(author)
+        print(f"{author['given_name']} {author['surname']}")
     print()
 
     # Example #3: get a list of authors whose surnames contain a search string
@@ -160,9 +157,8 @@ def main():
     print(f'========== All authors whose surnames contain "{search_text}" ==========')
     authors = get_matching_authors(search_text)
     for author in authors:
-        print(author)
+        print(f"{author['given_name']} {author['surname']}")
     print()
-
 
 
 if __name__ == '__main__':
